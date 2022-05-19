@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Service = ({service,setTreatment}) => {
-    const{name,slots}=service
+    const{name,slots,price}=service
     console.dir(slots);
     return (
         <div>
@@ -15,6 +15,7 @@ const Service = ({service,setTreatment}) => {
         slots.length>1?"spaces ":"space"
         }available
     </p>
+    <p>Price:${price}</p>
     {/* <div className="card-actions justify-end">
       <button className="btn btn-primary">Accept</button>
       <button className="btn btn-ghost">Deny</button>
